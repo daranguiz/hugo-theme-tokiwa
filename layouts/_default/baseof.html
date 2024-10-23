@@ -122,7 +122,8 @@
 			font-family: "FancyTitleFont";
 			font-style: normal;
 			font-display: swap;
-			src: local('Songti SC')
+			src: url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff2") | absURL }}') format('woff2'),
+				url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff") | absURL }}') format('woff');
 		}
 		/*  For variable font usage sometimes */
 		/*
@@ -139,7 +140,8 @@
 			font-style: normal;
 			font-weight: 300;
 			font-display: swap;
-			src: local('Songti SC')
+			src: url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff2") | absURL }}') format('woff2'),
+				url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff") | absURL }}') format('woff');
 		}
 
 		/* noto-serif-sc-regular - latin_chinese-simplified */
@@ -148,7 +150,8 @@
 			font-style: normal;
 			font-weight: 400;
 			font-display: swap;
-			src: local('Songti SC')
+			src: url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff2") | absURL }}') format('woff2'),
+				url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff") | absURL }}') format('woff');
 		}
 
 		/* noto-serif-sc-500 - latin_chinese-simplified */
@@ -157,7 +160,8 @@
 			font-style: normal;
 			font-weight: 500;
 			font-display: swap;
-			src: local('Songti SC')
+			src: url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff2") | absURL }}') format('woff2'),
+				url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff") | absURL }}') format('woff');
 		}
 	</style>
 	{{ end }}
