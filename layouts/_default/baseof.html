@@ -116,6 +116,50 @@
 			/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 		}
 	</style>
+	{{ else }}
+	<style type="text/css" media="screen, print">
+		@font-face {
+			font-family: "FancyTitleFont";
+			font-style: normal;
+			font-display: swap;
+			src: local('Songti SC')
+		}
+		/*  For variable font usage sometimes */
+		/*
+		@font-face {
+			font-family: 'Source Han Serif CN Variable';
+			src: url('{{"fonts/SourceHanSerifCN-VF.otf.woff2" | absURL }}') format('woff2');
+			font-weight: 1 999;
+			font-style: normal;
+			font-display: swap;
+		} */
+		/* noto-serif-sc-300 - latin_chinese-simplified */
+		@font-face {
+			font-family: 'Noto Serif CJK SC';
+			font-style: normal;
+			font-weight: 300;
+			font-display: swap;
+			src: local('Songti SC')
+		}
+
+		/* noto-serif-sc-regular - latin_chinese-simplified */
+		@font-face {
+			font-family: 'Noto Serif CJK SC';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: local('Songti SC')
+		}
+
+		/* noto-serif-sc-500 - latin_chinese-simplified */
+		@font-face {
+			font-family: 'Noto Serif CJK SC';
+			font-style: normal;
+			font-weight: 500;
+			font-display: swap;
+			src: local('Songti SC')
+		}
+	</style>
 	{{ end }}
 </head>
 
