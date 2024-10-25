@@ -7,7 +7,7 @@
 		aria-label="follow on {{$key}}——Opens in a new window">
 		{{/*  <object type="image/svg+xml" data='{{ relURL (printf "%s%s%s" "svg/" $key ".svg") }}' class="w-12 h-12
 		text-gray-200"></object> */}}
-		<div class="fill-current h-8 w-8">
+		<div class="fill-current h-8 w-8" style="padding: 1px 2px">
 			{{ partial (printf "%s%s%s" "svg/" $key "-line.svg") . }}
 		</div>
 	</a>
